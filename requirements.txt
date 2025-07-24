@@ -1,0 +1,5 @@
+requests
+azure-devops
+python-dotenv
+pytest
+ollama
