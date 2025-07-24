@@ -1,10 +1,32 @@
-# ADO Summary Agent
+# ADO Summary Agent (Local CPU)
 
 An intelligent Azure DevOps work item analysis system that generates deterministic, fact-based executive summaries using AI with comprehensive 3-month history integration.
 
 ## 🎯 Purpose
 
 Automatically analyzes Azure DevOps work items with their complete history, comments, and relationships to generate structured executive summaries. Eliminates AI hallucinations through strict deterministic prompting and provides rich context from 3-month filtered activity.
+
+## 🔒 Security & Data Protection
+
+### Enterprise-Grade Security Design
+- **Zero Cloud AI Exposure**: All AI processing runs locally using Ollama + Phi-3.5 model
+- **No Internet Ports**: No web servers or external API endpoints that could expose data
+- **Local CPU Processing**: Sensitive work item data never leaves your machine
+- **Direct ADO Integration**: Uses standard Azure DevOps REST API with your existing credentials
+- **No Third-Party AI Services**: Eliminates data sharing with OpenAI, Azure OpenAI, or other cloud providers
+
+### Data Protection Features
+- **Air-Gapped AI**: Work item descriptions, comments, and sensitive project data processed entirely offline
+- **Credential Security**: PAT tokens stored in environment variables, never hardcoded
+- **Local File Output**: Summaries saved to local files, no cloud storage required
+- **Minimal Attack Surface**: Command-line tool with no network listeners or exposed services
+- **Microsoft Compliance**: Uses only Microsoft-approved Azure DevOps APIs
+
+### Perfect for Enterprise Environments
+- **Behind Corporate Firewalls**: Works in restricted network environments
+- **Confidential Projects**: Suitable for sensitive intellectual property and customer data
+- **Regulatory Compliance**: Meets data residency and processing requirements
+- **Internal Use Only**: No external dependencies for AI processing once model is downloaded
 
 ## 🏗️ How It Works
 
