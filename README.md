@@ -137,4 +137,4 @@ Business Value: [Score] | Assigned: [Person]
 
 ---
 
-*Version 3.0 | July 2025 *
+*Version 1.0 | July 2025 *
